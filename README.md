@@ -1,2 +1,2 @@
 # api_yamdb
-![example workflow](https://github.com/Keshail/yamdb_final/workflows/yamdb_final/badge.svg)
+![yamdb_final](https://github.com/Keshail/yamdb_final/workflows/yamdb_workflow.yml/badge.svg)
