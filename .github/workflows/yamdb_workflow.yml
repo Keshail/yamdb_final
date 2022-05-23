@@ -46,6 +46,7 @@ jobs:
         with:
           push: true
           tags: k4n1/api_yamdb_web:latest
+          file: ./api_yamdb/Dockerfile
           
   deploy:
     runs-on: ubuntu-latest
