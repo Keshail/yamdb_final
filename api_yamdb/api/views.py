@@ -11,6 +11,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from users.models import User
 from reviews.models import Category, Genre, Review, Title
 from .filters import TitleFilter
+
 from .permissions import (
     IsAdmin, ReadOnly, IsAuthorModeratorAdminOrReadOnly
 )
@@ -24,7 +25,6 @@ from .serializers import (
     UserSerializer,
     SignupSerializer,
     TokenSerializer,
-
 )
 
 ROLENAME = 'user'
