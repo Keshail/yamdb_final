@@ -2,7 +2,7 @@
 ![yamdb_final](https://github.com/Keshail/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ## Адрес проекта
-http://127.0.0.1/admin
+http://51.250.26.215/admin
 
 ## Пример запроса
 http://51.250.26.215/api/v1/titles/1/
