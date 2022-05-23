@@ -17,7 +17,7 @@ YAMDB собирает записи пользователей ввиде люб
 Для начала если у вас не присутствует **Docker**  , то его нужно установить , 
 вот официальная ->[инструкция](https://docs.docker.com/engine/install/).
 ### Установка проекта:
--   Клонировать  [https://github.com/Keshail/infra_sp2](https://github.com/Keshail/infra_sp2)
+-   Клонировать  [https://github.com/Keshail/infra_sp2](https://github.com/Keshail/yamdb_final)
 -  Проверить 2 файла и это:
 >   **Dockerfile**: проверить пути до локальных файлов и поправьте их, если это необходимо.
 >   
