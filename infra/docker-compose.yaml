@@ -8,13 +8,11 @@ services:
     env_file:
       - ./.env
   web:
-    build:
-      context: ../
-      dockerfile: api_yamdb/Dockerfile
+    image: k4ni/api_yamdb_web:latest
     restart: always
     volumes:
       - static_value:/app/static/
-      - media_value:/app/media/ 
+      - media_value:/app/media/
     depends_on:
       - db
     env_file:
@@ -36,6 +34,6 @@ services:
     depends_on:
       - web
 
-volumes: 
+volumes:
   static_value:
   media_value:
