@@ -1,9 +1,8 @@
-from django.shortcuts import get_object_or_404
 from django.contrib.auth.tokens import default_token_generator
+from django.shortcuts import get_object_or_404
 from rest_framework import serializers
-
-from users.models import User
 from reviews.models import Category, Comment, Genre, Review, Title
+from users.models import User
 
 
 class GenreSerializer(serializers.ModelSerializer):

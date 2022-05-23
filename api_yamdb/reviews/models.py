@@ -1,8 +1,8 @@
-from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
-
-from users.models import User
+from django.db import models
 from api.validators import validator_the_year
+from users.models import User
+
 
 
 class Genre(models.Model):

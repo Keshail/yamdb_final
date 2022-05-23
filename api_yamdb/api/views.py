@@ -1,6 +1,6 @@
-from django.shortcuts import get_object_or_404
-from django.core.mail import send_mail
 from django.db.models import Avg
+from django.core.mail import send_mail
+from django.shortcuts import get_object_or_404
 from django.contrib.auth.tokens import default_token_generator
 from django.conf import settings
 from rest_framework import filters, mixins, viewsets, status
@@ -8,10 +8,12 @@ from rest_framework.permissions import AllowAny
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
-
-from .filters import TitleFilter
 from users.models import User
 from reviews.models import Category, Genre, Review, Title
+from .filters import TitleFilter
+from .permissions import (
+    IsAdmin, ReadOnly, IsAuthorModeratorAdminOrReadOnly
+)
 from .serializers import (
     CategorySerializer,
     CommentSerializer,
@@ -23,9 +25,6 @@ from .serializers import (
     SignupSerializer,
     TokenSerializer,
 
-)
-from .permissions import (
-    IsAdmin, ReadOnly, IsAuthorModeratorAdminOrReadOnly
 )
 
 ROLENAME = 'user'
