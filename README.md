@@ -2,10 +2,7 @@
 ![yamdb_final](https://github.com/Keshail/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ## Адрес проекта
-http://51.250.26.215/admin
-
-## Пример запроса
-http://51.250.26.215/api/v1/titles/1/
+[http://51.250.26.215/admin](http://localhost/admin/)
 
 ## Описание
 YAMDB собирает записи пользователей ввиде любых "жанров/категорий/тайтлов" , а также и их комментарии. Проект представляет собой web-приложение состоящие из 3-х контейнеров:
