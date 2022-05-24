@@ -46,7 +46,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/api_yamdb_web:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/infra_test:latest
           file: ./api_yamdb/Dockerfile
           
   deploy:
@@ -61,7 +61,7 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/api_yamdb_web:latest
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/infra_test:latest
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
